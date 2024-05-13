@@ -4,9 +4,7 @@ import Colors from "./../components/Colors";
 export default StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: "column",
     alignItems: "center",
-    backgroundColor: "orange",
   },
   background: {
     position: "absolute",
@@ -18,7 +16,8 @@ export default StyleSheet.create({
   VeloxDiv: {
     width: 200,
     height: 80,
-    marginTop: 30,
+    marginTop: 80,
+    
   },
   VeloxText: {
     // fontFamily: "Kaushan Script",
@@ -48,42 +47,76 @@ export default StyleSheet.create({
     margin: 40,
   },
   getStartBtn: {
-    padding: 15,
+    paddingHorizontal: 20,
     backgroundColor: Colors.green,
-    marginTop: 40,
+    marginTop: 50,
+    margin: "auto",
     alignItems: "center",
     justifyContent: "center",
-    height: 79,
-    width: 330,
     borderRadius: 50,
+    width: 280,
+    height: 80,
+    elevation: 4,
   },
-  btnText: {
-    fontSize: 23,
-    color: Colors.primary,
+  getStartbtnText: {
+    fontSize: 28,
+    color: "#ffffff",
   },
 
   // login Page
   loginTextVid: {
-    marginTop: 85,
-    width: 100,
-    height: 85,
+    marginTop: 30,
+    padding: 10,
   },
   loginText: {
-    fontSize: 40,
+    fontSize: 36,
     textAlign: "center",
+    fontWeight: "bold",
   },
-  loginDiv: {
+  loginDiv1: {
+    height: 200,
+    width: 390,
+  },
+  inputField: {
+    height: 60,
+    // width: 400,
+    borderWidth: 1,
+    borderColor: "#ABABAB",
+    borderRadius: 8,
+    padding: 10,
+    fontSize: 20,
+    backgroundColor: "#fff",
+  },
+  continueBtn: {
+    backgroundColor: "teal",
+    height: 50,
+    borderRadius: 8,
+    justifyContent: "center",
+    alignItems: "center",
+    elevation: 4,
+  },
+  seperatorView: {
+    flexDirection: "row",
+    gap: 10,
+    alignItems: "center",
+    marginVertical: 30,
+  },
+  seperator: {
+    color: Colors.grey,
+    fontSize: 16,
+  },
+  loginDiv2: {
     display: "flex",
     backgroundColor: "transparent",
-    height: 450,
-    width: 370,
+    height: 240,
+    width: 390,
     borderColor: Colors.black,
-    borderWidth: 2,
+    // borderWidth: 2,
     borderRadius: 30,
     flexDirection: "column",
-    justifyContent: "space-around",
+    justifyContent: "space-between",
     padding: 25,
-    marginTop: 20,
+    marginTop: 10,
   },
   btn: {
     backgroundColor: Colors.primary,
@@ -91,38 +124,108 @@ export default StyleSheet.create({
     borderRadius: 36,
     justifyContent: "center",
     alignItems: "center",
+    elevation: 4,
   },
   facebookBtn: {
     backgroundColor: "#1877f2",
   },
   btnText: {
     color: "#000",
-    fontSize: 20,
+    fontSize: 22,
+    marginLeft: 30,
     // fontFamily: "mon-b",
+  },
+  facebookBtnText: {
+    color: "#fff",
+    fontSize: 21,
+    marginLeft: 40,
   },
   btnIcon: {
     position: "absolute",
-    left: 13,
-    color: "teal",
+    left: 15,
+    height: 40,
+    width: 40,
   },
   facebookIcon: {
+    height: 40,
+    width: 40,
     color: "#fff",
+    position: "absolute",
+    left: 13,
   },
 
   // Gender Page
-  genderImg: {
-    height: 300,
-    width: 200,
+  buildProf: {
+    marginTop: 90,
+    padding: 10,
+    marginBottom: 12,
   },
-  genderBtn: {
-    // position: "absolute",
+  buildProfText: {
+    fontSize: 30,
+    textAlign: "center",
+    fontWeight: "bold",
+  },
+  additionalDiv: {
+    paddingHorizontal: 40,
+  },
+  additionalBox: {
+    fontSize: 20,
+    textAlign: "center",
+  },
+  genderLine: {
+    fontSize: 35,
+    marginTop: 90,
+  },
+  genderImg: {
+    height: 260,
+    width: 160,
+    margin: 30,
+    resizeMode: "stretch",
+  },
+  genderImgf: {
+    height: 248,
+  },
+  nextBtn: {
+    paddingHorizontal: 20,
+    backgroundColor: Colors.green,
+    margin: "auto",
     alignItems: "center",
-    justifyContent: "space-between",
+    justifyContent: "center",
+    borderRadius: 50,
+    width: 250,
+    height: 80,
+    elevation: 4,
+  },
+
+  // Activity Page
+  ageText: {
+    fontSize: 35,
     marginTop: 50,
   },
+  activityBtnDiv: {
+    marginTop: 0,
+    alignItems: "stretch",
+    height: 450,
+    width: 400,
+    borderColor: "transparent",
+  },
+  activityBtn: {
+    backgroundColor: "transparent",
+    height: 60,
+    borderWidth: 1.5,
+    borderRadius: 20,
+    marginTop: 0,
+    elevation: 0,
+    marginTop: 20,
+  },
+  ActivitybtnText: {
+    fontSize: 30,
+  },
+  errorText: {
+    color: "red",
+    marginBottom: 5,
+    fontSize: 16,
+  },
 });
-
-
-
 
 

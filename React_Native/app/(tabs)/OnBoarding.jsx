@@ -6,8 +6,6 @@ import {
   TouchableOpacity,
 } from "react-native";
 import React from "react";
-import Login from "../Screens/Login";
-import { Link } from "expo-router";
 import styles from "../../components/Designs";
 import { StatusBar } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
@@ -19,7 +17,7 @@ export default function OnBoarding({ navigation }) {
         colors={["#ffffff", "#DEF4F0"]}
         style={styles.background}
       />
-      <StatusBar backgroundColor="blue" />
+      <StatusBar barStyle="dark-content" />
       <View style={styles.VeloxDiv}>
         <Text style={styles.VeloxText}>Velox</Text>
       </View>
@@ -35,11 +33,11 @@ export default function OnBoarding({ navigation }) {
       <TouchableOpacity
         style={styles.getStartBtn}
         onPress={() => {
-          navigation.navigate("Login");
+          navigation.navigate("LoginPage");
           console.log("clicked");
         }}
       >
-        <Text style={styles.btnText}>Get Started</Text>
+        <Text style={styles.getStartbtnText}>Get Started</Text>
       </TouchableOpacity>
       {/* </LinearGradient> */}
     </SafeAreaView>
